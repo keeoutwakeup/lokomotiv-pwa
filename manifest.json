@@ -2,7 +2,7 @@
   "name": "ФК «Локомотив» Москва",
   "short_name": "Локомотив",
   "description": "Официальное приложение болельщика ФК «Локомотив» Москва",
-  "start_url": "/index.html",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#e31937",
   "theme_color": "#e31937",
