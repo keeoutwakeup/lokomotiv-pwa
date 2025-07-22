@@ -1,7 +1,7 @@
 const CACHE_NAME = 'loko-cache-v1';
 const urlsToCache = [
   '/',
-  '/HTMLPage1.html',
+  '/index.html',
   '/HTMLPage2.html',
   '/HTMLPage3.html',
   '/StyleSheet1.css',
