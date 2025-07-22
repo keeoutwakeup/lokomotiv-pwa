@@ -1,0 +1,117 @@
+﻿
+<head>
+<link rel="manifest" href="/manifest.json">
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/serviceworker.js')
+        .then(registration => {
+          console.log('ServiceWorker registration successful');
+        })
+        .catch(err => {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+    });
+  }
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ФК «Локомотив» Москва</title>
+    <link rel="icon" href="lokologo.png" sizes="20x20" type="image/png">
+    <link rel="stylesheet" href="StyleSheet1.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="video-background">
+                    <video autoplay muted loop playsinline>
+                        <source src="video.mp4" type="video/mp4">
+                        <img src="rzhdarena.jpg" alt="Фон Локомотив">
+                    </video>
+                    <div class="video-overlay"></div>
+                </div>
+                <div class="logo">
+                    <img src="lokologo.png">
+                </div>
+                <ul class="nav-links">
+
+                    <li><a href="#">ФК «Локомотив»</a></li>
+                    <li><a href="#">Команда</a></li>
+                    <li><a href="HTMLPage2.html">Билеты</a></li>
+                    <li><a href="HTMLPage3.html">Карта болельщика</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h2>ФК «Локомотив» Москва</h2>
+                <p>Один из старейших и самых титулованных футбольных клубов России.</p>
+                <a href="HTMLPage2.html" class="btn">Купить билеты</a>
+                <a href="HTMLPage3.html" class="btn">Карта болельщика</a>
+            </section>
+
+            <section class="team-section">
+                <h2 class="section-title">О КОМАНДЕ</h2>
+                <div class="team-info">
+                    <div class="team-card">
+                        <h3>История</h3>
+                        <p>Основан в 1922 году. Домашний стадион - РЖД Арена (27 320 мест). Главные цвета - красно-зелёные.</p>
+                    </div>
+                    <div class="team-card">
+                        <h3>Достижения</h3>
+                        <p>3-кратный чемпион России, 10-кратный обладатель Кубка России, 3-кратный обладатель Суперкубка России.</p>
+                    </div>
+                    <div class="team-card">
+                        <h3>Тренер</h3>
+                        <p>Михаил Галактионов - главный тренер команды с 2023 года. Под его руководством команда показывает яркий атакующий футбол.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">КЛЮЧЕВЫЕ ИГРОКИ</h2>
+                <div class="players">
+                    <div class="player">
+                        <img src="gielerme.jpg" alt="Гилерме">
+                        <h4>Гилерме</h4>
+                        <p>Вратарь</p>
+                        <p>Капитан команды</p>
+                    </div>
+                    <div class="player">
+                        <img src="magkeev.jpg" alt="Магкеев">
+                        <h4>Станислав Магкеев</h4>
+                        <p>Защитник</p>
+                    </div>
+                    <div class="player">
+                        <img src="barinov.jpg" alt="Баринов">
+                        <h4>Дмитрий Баринов</h4>
+                        <p>Полузащитник</p>
+                    </div>
+                    <div class="player">
+                        <img src="tiknizyan.jpg" alt="Тикнизян">
+                        <h4>Артур Тикнизян</h4>
+                        <p>Нападающий</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="copyright">© 2025 ФК "Локомотив" Москва. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

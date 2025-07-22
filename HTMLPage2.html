@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<link rel="manifest" href="/manifest.json">
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/serviceworker.js')
+        .then(registration => {
+          console.log('ServiceWorker registration successful');
+        })
+        .catch(err => {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+    });
+  }
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Купить билеты - ФК «Локомотив» Москва</title>
+    <link rel="icon" href="lokologo.png" sizes="20x20" type="image/png">
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="video-background">
+                    <video autoplay muted loop playsinline>
+                        <source src="video.mp4" type="video/mp4">
+                        <img src="rzhdarena.jpg" alt="Фон Локомотив">
+                    </video>
+                    <div class="video-overlay"></div>
+                </div>
+                <div class="logo">
+                    <img src="lokologo.png"
+                </div>
+                <ul class="nav-links">
+
+                    <li><a href="HTMLPage1.html">ФК «Локомотив»</a></li>
+                    <li><a href="#">Команда</a></li>
+                    <li><a href="HTMLPage2.html" class="active">Билеты</a></li>
+                    <li><a href="HTMLPage3.html">Карта болельщика</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="tickets-section">
+                <h2 class="section-title-2">КУПИТЬ БИЛЕТЫ</h2>
+                
+                <div class="next-match">
+                    <div class="match-teams">
+                        <div class="team">
+                            <img src="lokologo.png" alt="Локомотив">
+                            <span>Локомотив</span>
+                        </div>
+                        <div class="match-info">
+                            <div class="match-date">19.07.2025 (Суббота)</div>
+                            <div class="match-time">18:00</div>
+                            <div class="match-info">Россия. Премьер-лига, Тур 1</div>
+                            <div class="match-stadium">Стадион: РЖД Арена</div>
+                        </div>
+                        <div class="team">
+                            <img src="sochilogo.png" alt="Сочи">
+                            <span>Сочи</span>
+                        </div>
+                    </div>
+
+                <div class="ticket-types">
+                    <div class="ticket-card">
+                        <h3>Западная трибуна</h3>
+                        <p class="price">1 500 ₽</p>
+                        <button class="buy-btn">Купить</button>
+                    </div>
+                    
+                    <div class="ticket-card">
+                        <h3>Восточная трибуна</h3>
+                        <p class="price">1 800 ₽</p>
+                        <button class="buy-btn">Купить</button>
+                    </div>
+                    
+                    <div class="ticket-card vip">
+                        <h3>VIP-ложа</h3>
+                        <p class="price">5 000 ₽</p>
+                        <button class="buy-btn">Купить</button>
+                    </div>
+                    
+                    <div class="ticket-card">
+                        <h3>Фан-сектор</h3>
+                        <p class="price">1 200 ₽</p>
+                        <button class="buy-btn">Купить</button>
+                    </div>
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="copyright">© 2025 ФК "Локомотив" Москва. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
